@@ -48,11 +48,20 @@ h2{
    padding: 20px;
    text-align: center;
 }
+.lista-productos li:nth-child(2n+1){
+   clear: both;
+}
 @media(min-width: 768px){
    .lista-productos li{
       width: 33.3%;
       
    }
+   .lista-productos li:nth-child(2n+1){
+      clear: unset;
+   }
+   .lista-productos li:nth-child(3n+1){
+      clear: both;
+}
 }
 
 .lista-productos li img{
@@ -78,7 +87,7 @@ h2{
 
 .boton{
    background-color: #ffce00;
-   padding: 10px 100px ;
+   padding: 10px 40px ;
    display: inline-block;
    margin-top: 20px;
    text-decoration: none;
